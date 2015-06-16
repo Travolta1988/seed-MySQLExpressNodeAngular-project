@@ -6,7 +6,7 @@ router.get('/:id',isLoggedIn, function(req, res) {
     var id = req.params.id;
 
     console.log(req.params.id)
-    res.render('./profile', {
+    res.render('./page1', {
         title: 'MeanProject | ' + req.params.id,
         logged_in: 'logged_in'
     })
