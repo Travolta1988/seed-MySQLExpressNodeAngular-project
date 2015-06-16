@@ -1,4 +1,4 @@
-### About Studystar ###
+### About ###
 
 * MEAN | Node.js Project | Mysql-DB | Passport.js Auth
 * Created by Kolesnyk Dmitry
