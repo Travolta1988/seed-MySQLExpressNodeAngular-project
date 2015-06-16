@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET login-signup page. */
 router.get('/',isLoggedIn, function(req, res, next) {
     res.render('./login-signup', {
-        title: 'Регистрация | Вход',
+        title: 'Login | Signup',
         signupmessage: req.flash('signupMessage'),
         loginmessageName: req.flash('loginMessageName'),
         loginmessagePass: req.flash('loginMessagePass'),

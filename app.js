@@ -69,7 +69,7 @@ app.use(function(err, req, res, next) {
 
 
 /**********************RUN SERVER*********************/
-var debug = require('debug')('studystar:server');
+var debug = require('debug')();
 var http = require('http');
 
 var port = normalizePort(process.env.PORT || '3300');

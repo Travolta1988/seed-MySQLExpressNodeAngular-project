@@ -1,18 +1,6 @@
-studystar = angular.module('studystar', [])
+seed = angular.module('seed', [])
 
-studystar.config [
-  '$routeProvider'
-  ($routeProvider) ->
-    $routeProvider.when('/question'+':questionId',
-      templateUrl: '/views/sections/answers-container.html',
-      controller: 'answersCtrl'
-    )
-    return
-]
-
-
-
-studystar.factory 'socket', ($rootScope) ->
+seed.factory 'socket', ($rootScope) ->
   socket = io.connect()
   {
     on: (eventName, callback) ->

@@ -5,5 +5,5 @@ module.exports = {
         'user': 'root',
         'password': 'secret'
     },
-    'database': 'studystar'
+    'database': 'seed'
 };

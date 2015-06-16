@@ -19,8 +19,9 @@
 
 ### Run project ###
 
-* nodemon app
+* nodemon app -> (run node.js project)
+* grunt -> (grunt will be watching files in /compile folder and compile them to /public)
 
-### Contact me ###
+### If you have questions write me ###
 
 * E-mail: dmitri.kolesnyk@gmail.com

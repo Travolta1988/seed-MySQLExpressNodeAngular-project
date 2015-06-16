@@ -1,5 +1,5 @@
 {
-  "name": "studystar",
+  "name": "Node.js Seed Project",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -47,23 +47,17 @@
     "session.socket.io": "0.2.x",
     "socket.io": "1.3.x"
   },
-  "description": "\"StudyStar - is ukrainian social network for ukranian youth created to help them studying with pleasure and fun\"",
+  "description": "\"Node JS MEAN | MySQL | Passport.js Auth\"",
   "main": "app.js",
-  "author": "Dmitry Kolesnyk, CEO StudyStar",
+  "author": "Dmitry Kolesnyk",
   "license": "ISC",
   "devDependencies": {
     "coffee-script": "^1.9.2"
   },
   "repository": {
-    "type": "git",
-    "url": "git@bitbucket.org:griffin2006/studystar.git"
+    "type": "git"
   },
   "keywords": [
-    "education",
-    "online",
-    "study",
-    "game",
-    "social",
-    "network"
+
   ]
 }

@@ -112,9 +112,9 @@ var auth = function(app, passport, server) {
     /******************************************************/
 
     passport.use(new GPStrategy({
-            consumerKey: '8gsf8kf611sfr0hodl6ovcl1s9bc34fp',
-            consumerSecret: 'yQbECn-DhVMK2Kt2SUoQZ869',
-            callbackURL: "http://localhost:3000/auth/google/callback"
+            consumerKey: 'YOUR VALUE GOES HERE',
+            consumerSecret: 'YOUR VALUE GOES HERE',
+            callbackURL: "YOUR VALUE GOES HERE"
         },
         function(token, tokenSecret, profile, done) {
             console.log(profile)
@@ -125,9 +125,9 @@ var auth = function(app, passport, server) {
     /*VKONTAKTE STRATEGY
     /******************************************************/
     passport.use(new VkontakteStrategy({
-            clientID:     4923254,
-            clientSecret: '606LsXUY9scADNsYdaE1',
-            callbackURL:  "http://localhost:3000/auth/vkontakte/callback"
+            clientID:     'YOUR VALUE GOES HERE',
+            clientSecret: 'YOUR VALUE GOES HERE',
+            callbackURL:  'YOUR VALUE GOES HERE'
         },
         function (accessToken, refreshToken, profile, done) {
              var vkUser ={
@@ -143,21 +143,13 @@ var auth = function(app, passport, server) {
     /*FACEBOOK STRATEGY
     /******************************************************/
     passport.use(new FBStrategy({
-            clientID: 456293927853567,
-            clientSecret: 'e098580b6bf669cba60addd191ffeaff',
-            callbackURL: "http://localhost:3000/auth/facebook/callback",
+            clientID: 'YOUR VALUE GOES HERE',
+            clientSecret: 'YOUR VALUE GOES HERE',
+            callbackURL: 'YOUR VALUE GOES HERE',
             profileFields: [ 'emails', 'first_name', 'last_name' ]
         },
-        function(accessToken, refreshToken, profile, done) {
-            console.log(profile)
-            var newUserFB = {
-                username: profile.displayName
-            };
-            var insertQuery = "INSERT INTO users ( username ) values (?)";
-            connection.query(insertQuery,[newUserFB.username])
-
-
-
+        function(accessToken, refreshToken, profile) {
+            //code here
         }
     ));
 
@@ -167,13 +159,13 @@ var auth = function(app, passport, server) {
     /*ODNOKLASSNIKI STRATEGY
      /******************************************************/
     passport.use(new OKStrategy({
-            clientID: 1137570560,
-            clientPublic: 'CBAEPOMEEBABABABA',
-            clientSecret: 'F1D9334438595A5864DDE84E',
-            callbackURL: "http://localhost:3000/auth/odnoklassniki/callback"
+            clientID: 'YOUR VALUE GOES HERE',
+            clientPublic: 'YOUR VALUE GOES HERE',
+            clientSecret: 'YOUR VALUE GOES HERE',
+            callbackURL: 'YOUR VALUE GOES HERE'
         },
         function(accessToken, refreshToken, profile, done) {
-            console.log(profile)
+            //YOUR CODE GOES HERE
         }
     ));
 
@@ -251,7 +243,7 @@ var auth = function(app, passport, server) {
                     if (!user) { return res.redirect('/login-signup');}
                 req.logIn(user, function(err) {
                     if (err) { return next(err); }
-                    return res.redirect('/study');
+                    return res.redirect('/page2/main');
                 });
             })(req, res, next)
     });
@@ -263,7 +255,7 @@ var auth = function(app, passport, server) {
                 if (!user) { return res.redirect('/login-signup');}
             req.logIn(user, function(err) {
                 if (err) { return next(err); }
-                return res.redirect('/study/main');
+                return res.redirect('/page2/main');
             });
         })(req, res, next);
     });

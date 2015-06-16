@@ -1,17 +1,8 @@
-var studystar;
+var seed;
 
-studystar = angular.module('studystar', []);
+seed = angular.module('seed', []);
 
-studystar.config([
-  '$routeProvider', function($routeProvider) {
-    $routeProvider.when('/question' + ':questionId', {
-      templateUrl: '/views/sections/answers-container.html',
-      controller: 'answersCtrl'
-    });
-  }
-]);
-
-studystar.factory('socket', function($rootScope) {
+seed.factory('socket', function($rootScope) {
   var socket;
   socket = io.connect();
   return {
