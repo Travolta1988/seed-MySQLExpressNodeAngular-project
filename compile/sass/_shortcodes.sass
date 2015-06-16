@@ -1,0 +1,1503 @@
+/****************************************************************************
+ *	Table of Content
+ ****************************************************************************
+ *
+ *
+ *SOME CLASSES THAT YOU CAN APPLY TO ALL ELEMENTS FOR DECIDE THE GRAPHIC
+ *	1- background class
+ *	2- border color options
+ *	3- shadow color for elements
+ *	4- radius options
+ *	5- strike text
+ *
+ *
+ *SOME SHORTCODES FOR CREATE YOUR PAGES
+ *	6- logo options
+ *	7 button rules
+ *	8- btn icon
+ *	9- btn icon bg
+ *	10- divider
+ *	11- dropcaps
+ *	12- alerts
+ *	13- iframe
+ *	14- accordion
+ *	15- toogle
+ *	16- progress bar
+ *	17- tabs
+ *	18- list
+ *	19- table
+ *	20- filter
+ *	21- left sidebar
+ *	22- right sidebar
+ *	23- triangle
+ *
+ *
+ *SOME CLASSES FOR MARGIN, PADDING AND POSITION OPTIONS
+ *	24- block
+ *	25- display none
+ *	26- padding
+ *	27- space
+ *	28- margin
+ *	29- size
+ *	30- absolute
+ *	31- relative
+ *	32- height
+ *
+ *
+ *SOME CLASSES FOR ARCHIVE SECTION
+ *	33- textevidence
+ *	34- focus
+ *	35- archive
+ *	36- activity
+ *	37- mansonry
+ *
+ *
+ *EFFECTS HOVER
+ *	38- rotate
+ *	39- press
+ *	40- zoom
+ *	41- opacity
+ *	42- transition
+ *	43- bg
+ *
+ *
+ *JQUERY UI
+ *	44- calendar
+ *	45- tooltip
+ *	46- slide range
+
+/***********************SOME CLASSES THAT YOU CAN APPLY TO ALL ELEMENTS FOR DECIDE THE GRAPHIC************************************
+
+/* 1 - START DARKBG
+
+.bg_white
+  background-color: #ffffff
+
+.bg_grey
+  background-color: #f9f9f9
+
+.bg_grey2
+  background-color: #f1f1f1
+
+.bg_greydark
+  background-color: #1C6F89
+
+.bg_greydark2
+  background-color: #1C6F89
+
+.bg_green
+  background-color: #6fc191
+
+.bg_blue
+  background-color: #74cee4
+
+.bg_violet
+  background-color: #c389ce
+
+.bg_orange
+  background-color: #ec774b
+
+.bg_red
+  background-color: #e16c6c
+
+.bg_yellow
+  background-color: #edbf47
+
+.bg_greendark
+  background-color: #6ab78a
+
+.bg_bluedark
+  background-color: #6fc4d9
+
+.bg_violetdark
+  background-color: #ac7ab5
+
+.bg_orangedark
+  background-color: #df764e
+
+.bg_reddark
+  background-color: #c86969
+
+.bg_yellowdark
+  background-color: #e0b84e
+
+.bg_gradient
+  background: #74cee4
+  /* Old browsers
+  background: -moz-linear-gradient(left, #74cee4 0%, #66ce9c 16%, #edbf47 32%, #ec774b 49%, #74cee4 65%, #66ce9c 83%, #edbf47 100%)
+  /* FF3.6+
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #74cee4), color-stop(16%, #66ce9c), color-stop(32%, #edbf47), color-stop(49%, #ec774b), color-stop(65%, #74cee4), color-stop(83%, #66ce9c), color-stop(100%, #edbf47))
+  /* Chrome,Safari4+
+  background: -webkit-linear-gradient(left, #74cee4 0%, #66ce9c 16%, #edbf47 32%, #ec774b 49%, #74cee4 65%, #66ce9c 83%, #edbf47 100%)
+  /* Chrome10+,Safari5.1+
+  background: -o-linear-gradient(left, #74cee4 0%, #66ce9c 16%, #edbf47 32%, #ec774b 49%, #74cee4 65%, #66ce9c 83%, #edbf47 100%)
+  /* Opera 11.10+
+  background: -ms-linear-gradient(left, #74cee4 0%, #66ce9c 16%, #edbf47 32%, #ec774b 49%, #74cee4 65%, #66ce9c 83%, #edbf47 100%)
+  /* IE10+
+  background: linear-gradient(to right, #74cee4 0%, #66ce9c 16%, #edbf47 32%, #ec774b 49%, #74cee4 65%, #66ce9c 83%, #edbf47 100%)
+  /* W3C
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74cee4', endColorstr='#edbf47',GradientType=1 )
+/* IE6-9
+
+/*END DARKBG
+
+/* 2- START DARKBORDER: applica l'ombra del colore selezionato
+
+.border_white
+  border: 2px solid #ffffff
+  td, th
+    border: 2px solid #ffffff
+
+.border_grey
+  border: 2px solid #f1f1f1
+  td, th
+    border: 2px solid #f1f1f1
+
+.border_grey2
+  border: 2px solid #e5e5e5
+  td, th
+    border: 2px solid #e5e5e5
+
+.border_greydark
+  border: 2px solid #404547
+  td, th
+    border: 2px solid #404547
+
+.border_greydark2
+  border: 2px solid #353b3d
+  td, th
+    border: 2px solid #353b3d
+
+.border_green
+  border: 2px solid #6ab78a
+  td, th
+    border: 2px solid #6ab78a
+
+.border_blue
+  border: 2px solid #6fc4d9
+  td, th
+    border: 2px solid #6fc4d9
+
+.border_violet
+  border: 2px solid #ac7ab5
+  td, th
+    border: 2px solid #ac7ab5
+
+.border_orange
+  border: 2px solid #df764e
+  td, th
+    border: 2px solid #df764e
+
+.border_red
+  border: 2px solid #c86969
+  td, th
+    border: 2px solid #c86969
+
+.border_yellow
+  border: 2px solid #e0b84e
+  td, th
+    border: 2px solid #e0b84e
+
+.border_greendark
+  border: 2px solid #65ae83
+  td, th
+    border: 2px solid #65ae83
+
+.border_bluedark
+  border: 2px solid #6dc0d5
+  td, th
+    border: 2px solid #6dc0d5
+
+.border_violetdark
+  border: 2px solid #a675af
+  td, th
+    border: 2px solid #a675af
+
+.border_orangedark
+  border: 2px solid #d8734c
+  td, th
+    border: 2px solid #d8734c
+
+.border_reddark
+  border: 2px solid #bf6363
+  td, th
+    border: 2px solid #bf6363
+
+.border_yellowdark
+  border: 2px solid #d4ae49
+  td, th
+    border: 2px solid #d4ae49
+
+/*END DARKBORDER
+
+/* 3- START DARKSHADOW: applica l'ombra in base al colore dato usando la classe bg_colore
+
+.shadow
+  &.bg_grey
+    box-shadow: 0px 4px 0px 0px #f1f1f1
+  &.bg_grey2
+    box-shadow: 0px 4px 0px 0px #e5e5e5
+  &.bg_greydark
+    box-shadow: 0px 4px 0px 0px #404547
+  &.bg_greydark2
+    box-shadow: 0px 4px 0px 0px #353b3d
+  &.bg_green
+    box-shadow: 0px 4px 0px 0px #6ab78a
+  &.bg_blue
+    box-shadow: 0px 4px 0px 0px #6fc4d9
+  &.bg_violet
+    box-shadow: 0px 4px 0px 0px #ac7ab5
+  &.bg_orange
+    box-shadow: 0px 4px 0px 0px #df764e
+  &.bg_red
+    box-shadow: 0px 4px 0px 0px #c86969
+  &.bg_yellow
+    box-shadow: 0px 4px 0px 0px #e0b84e
+  &.bg_greendark
+    box-shadow: 0px 4px 0px 0px #65ae83
+  &.bg_bluedark
+    box-shadow: 0px 4px 0px 0px #6dc0d5
+  &.bg_violetdark
+    box-shadow: 0px 4px 0px 0px #a675af
+  &.bg_orangedark
+    box-shadow: 0px 4px 0px 0px #d8734c
+  &.bg_reddark
+    box-shadow: 0px 4px 0px 0px #bf6363
+  &.bg_yellowdark
+    box-shadow: 0px 4px 0px 0px #d4ae49
+
+/*END DARKSHADOW
+
+/* 4 -START DARK_RADIUS
+
+.radius
+  border-radius: 5px 5px 5px 5px
+
+.radius_top
+  border-radius: 5px 5px 0px 0px
+
+.radius_bottom
+  border-radius: 0px 0px 5px 5px
+
+.radius_left
+  border-radius: 5px 0px 0px 5px
+
+.radius_right
+  border-radius: 0px 5px 5px 0px
+
+.radius_circle
+  border-radius: 100%
+
+/*END DARK_RADIUS
+
+/* 5- START DARK_STRIKE
+
+.strike
+  text-decoration: line-through
+
+/*END DARK_STRIKE
+
+/*****************************************SOME SHORTCODES FOR CREATE YOUR PAGES*******************************************
+
+/* 6 - START LOGO
+
+.logo
+  float: left
+  position: relative
+  height: 10px
+  img
+    position: absolute
+    width: 135px
+    margin-top: 3px
+    border: 0
+
+/*END LOGO
+
+/* 7 - START BTN:
+
+.btn
+  font-family: 'Montserrat', sans-serif
+  display: inline-block
+  text-align: center
+  cursor: pointer
+  &.subtitle
+    font-family: 'Raleway', sans-serif !important
+  &.left
+    float: left
+  &.right
+    float: right
+  &.fullwidth
+    padding-left: 0px !important
+    padding-right: 0px !important
+    width: 100%
+  &.extrasmall
+    padding: 0px 10px
+    font-size: 13px
+  &.small
+    padding: 5px 10px
+    font-size: 15px
+  &.medium
+    padding: 10px 20px
+    font-size: 17px
+  &.big
+    padding: 15px 20px
+    font-size: 19px
+  &.extrasize
+    padding: 20px
+    font-size: 45px
+    line-height: 45px
+
+/*size
+
+/*END BTN
+
+/* 8 - START BTON:
+
+.btn_icon
+  font-family: 'Montserrat', sans-serif
+  display: inline-block
+  text-align: center
+  cursor: pointer
+  &.subtitle
+    font-family: 'Raleway', sans-serif !important
+  > i
+    display: inline-block
+    width: 20px
+    height: 20px
+    &:before
+      margin: 0px
+      padding: 0px
+  &.left
+    float: left
+  &.right
+    float: right
+  &.extrasmall
+    padding: 5px
+    font-size: 14px
+  &.small
+    padding: 10px
+    font-size: 15px
+  &.medium
+    padding: 15px
+    font-size: 17px
+  &.big
+    padding: 20px
+    font-size: 19px
+  &.extrabig
+    > i
+      display: inline-block
+      width: 40px
+      height: 40px
+    padding: 20px
+    font-size: 32px
+
+/*size
+
+/*extra big
+
+/*END BTON
+
+/* 9 - START BTON:
+
+.btn_iconbg
+  display: inline-block
+  > div
+    overflow: hidden
+    position: relative
+  &.small
+    width: 40px
+    height: 40px
+    > div
+      width: 40px
+      height: 40px
+  &.medium
+    width: 50px
+    height: 50px
+    > div
+      width: 50px
+      height: 50px
+  &.big
+    width: 60px
+    height: 60px
+    > div
+      width: 60px
+      height: 60px
+  &.extrabig
+    width: 80px
+    height: 80px
+    > div
+      width: 80px
+      height: 80px
+
+/*size
+
+/*END BTON
+
+/*START DARKICONBG
+
+.iconbg
+  position: absolute
+  bottom: -15px
+  &.left
+    left: -20px
+  &.right
+    right: -20px
+  &.small
+    font-size: 40px
+  &.medium
+    font-size: 50px
+  &.big
+    font-size: 60px
+  &.extrabig
+    font-size: 80px
+  &.grey
+    color: #f1f1f1
+  &.green
+    color: #6ab78a
+  &.blue
+    color: #6fc4d9
+  &.violet
+    color: #ac7ab5
+  &.orange
+    color: #df764e
+  &.red
+    color: #c86969
+  &.yellow
+    color: #e0b84e
+
+/*position
+
+/*size
+
+/*color
+
+/*END DARKICONBG
+
+/* 10 - START DIVIDER: color, align, size
+
+.divider
+  float: left
+  width: 100%
+  > span
+    display: block
+    margin: auto
+  &.left > span
+    float: left
+  &.right > span
+    float: right
+  &.big > span
+    width: 80px
+    height: 5px
+  &.small > span
+    width: 30px
+    height: 3px
+
+/*align
+
+/*size
+
+/*END DIVIDER
+
+/* 11- START DARKDROPCAP
+
+.dropcap
+  float: left
+  font-size: 35px
+  line-height: 20px
+  padding: 15px
+  margin-right: 20px
+
+/*END DARKDROPCAP
+
+/* 12 - START ALERTS
+
+.alerts
+  float: left
+  width: 100%
+  overflow: hidden
+  position: relative
+  > p > .iconclose
+    cursor: pointer
+
+/*END ALERTS
+
+/* 13 - START DARKIFRAME
+
+.iframe
+  float: left
+  width: 100%
+  border: 0
+
+/*END DARKIFRAME
+
+/* 14 - START ACCORDION
+
+.accordion
+  float: left
+  width: 100%
+  .ui-accordion-header-active
+    cursor: initial !important
+  .accordion_header
+    outline: 0
+    cursor: pointer
+    margin-bottom: 20px
+
+.accordion_content
+  padding: 0px 20px 20px 20px
+
+/*size
+
+.accordion_header
+  &.small
+    padding: 5px 10px
+  &.medium
+    padding: 10px 20px
+  &.big
+    padding: 15px 20px
+
+/*icon
+
+.accordion
+  .ui-accordion-header-active:before
+    content: '\e9ff' !important
+    font-family: 'fontello'
+    margin-right: 10px
+  .ui-accordion-header:before
+    content: '\ea01'
+    font-family: 'fontello'
+    margin-right: 10px
+
+/*END ACCORDION
+
+/* 15  - START TOOGLE
+
+.toogle
+  float: left
+  width: 100%
+
+.toogle_content
+  padding: 20px
+
+.toogle .toogle_header
+  outline: 0
+  cursor: pointer
+  float: none
+  width: initial
+
+/*size
+
+.toogle_header
+  &.small
+    padding: 5px 10px
+  &.medium
+    padding: 10px 20px
+  &.big
+    padding: 15px 20px
+
+/*icon
+
+.toogle
+  .ui-accordion-header-active:before
+    content: '\e9ff' !important
+    font-family: 'fontello'
+    margin-right: 10px
+  .ui-accordion-header:before
+    content: '\ea01'
+    font-family: 'fontello'
+    margin-right: 10px
+
+/*END TOOGLE
+
+/* 16 - START PROGRESSBAR
+
+.progressbar
+  float: left
+  width: 100%
+
+.progressbar_title
+  margin: 0px
+  padding: 0px
+  min-height: 20px
+  -webkit-transition: all 0.8s ease
+  -moz-transition: all 0.8s ease
+  -o-transition: all 0.8s ease
+  -ms-transition: all 0.8s ease
+  transition: all 0.8s ease
+  > span
+    padding: 0px
+    display: inline-block
+
+/*animate
+
+.animate_progressbar
+  width: 0% !important
+
+/*END PROGRESSBAR
+
+/* 17 - START DARKTABS
+
+.tab, .tabs
+  float: left
+  width: 100%
+
+.tab > .tabslist
+  margin: 0px
+  padding: 0px
+  list-style: none
+  float: left
+  width: 100%
+
+  li
+    margin: 0px
+    padding: 0px
+    float: left
+    > a
+      outline: 0
+    .ui-tabs-active > a
+      background-color: #f9f9f9 !important
+      color: #b7b7b7 !important
+      box-shadow: 0px 4px 0px 0px #f1f1f1
+
+/*END DARKTABS
+
+/* 18 - START DARKLIST
+
+.list
+  float: left
+  width: 100%
+  list-style: none
+  margin: 0px
+  padding: 0px
+  > li
+    float: left
+    width: 100%
+    border-top: 0px
+    border-left: 0px
+    border-right: 0px
+    border-width: 1px
+    &:last-child
+      border-bottom-width: 0px
+
+/*END DARKLIST
+
+/* 19 - START DARKTABLE
+
+.table
+  float: left
+  width: 100%
+  border-collapse: collapse
+  thead, tbody
+    border-width: 0px
+  tr
+    td, th
+      border-width: 1px
+  &.small tr
+    td, th
+      padding: 5px 10px
+  &.medium tr
+    td, th
+      padding: 10px 20px
+  &.big tr
+    td, th
+      padding: 15px 20px
+  &.extrabig tr
+    td, th
+      padding: 20px 20px
+  &.center
+    text-align: center
+  &.left
+    text-align: left
+  &.right
+    text-align: right
+
+/*size
+
+/*align
+
+/*END DARKTABLE
+
+/* 20 - START DARKFILTER
+
+.filter
+  float: left
+  width: 100%
+  &.greydark
+    background: rgba(0, 0, 0, 0.2)
+  &.green
+    background: rgba(111, 193, 145, 0.8)
+  &.blue
+    background: rgba(116, 206, 228, 0.8)
+  &.violet
+    background: rgba(195, 137, 206, 0.8)
+  &.yellow
+    background: rgba(237, 191, 71, 0.8)
+  &.orange
+    background: rgba(236, 119, 75, 0.8)
+  &.red
+    background: rgba(225, 108, 108, 0.8)
+
+/*END DARKFILTER
+
+/* 21 - 22 - START DARKLEFTSIDEBAR
+
+.left_sidebar
+  width: 300px
+  height: 100%
+  position: fixed
+  left: -300px
+  top: 0px
+  z-index: 99999
+  -webkit-transition: all 0.8s ease
+  -moz-transition: all 0.8s ease
+  -o-transition: all 0.8s ease
+  -ms-transition: all 0.8s ease
+  transition: all 0.8s ease
+
+.right_sidebar
+  width: 300px
+  height: 100%
+  position: fixed
+  right: -300px
+  top: 0px
+  z-index: 99999
+  -webkit-transition: all 0.8s ease
+  -moz-transition: all 0.8s ease
+  -o-transition: all 0.8s ease
+  -ms-transition: all 0.8s ease
+  transition: all 0.8s ease
+
+/*overlay
+
+.overlay_on
+  float: left
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.3)
+  position: fixed
+  z-index: 999
+  cursor: crosshair
+  -webkit-transition: all 0.8s ease
+  -moz-transition: all 0.8s ease
+  -o-transition: all 0.8s ease
+  -ms-transition: all 0.8s ease
+  transition: all 0.8s ease
+
+/*END DARKLEFTSIDEBAR
+
+/* 23 - START DARKTRIANGLE
+
+.triangle
+  width: 0px
+  height: 0px
+  border-style: solid
+  border-width: 15px 15px 0 15px
+  position: absolute
+  &.grey
+    border-color: #f1f1f1 transparent transparent transparent
+  &.greydark
+    border-color: #404547 transparent transparent transparent
+  &.green
+    border-color: #6ab78a transparent transparent transparent
+  &.blue
+    border-color: #6fc4d9 transparent transparent transparent
+  &.violet
+    border-color: #ac7ab5 transparent transparent transparent
+  &.orange
+    border-color: #df764e transparent transparent transparent
+  &.red
+    border-color: #c86969 transparent transparent transparent
+  &.yellow
+    border-color: #e0b84e transparent transparent transparent
+
+/*color
+
+/*END DARKTRIANGLE
+
+/***************************SOME CLASSES FOR MARGIN/SPACE/POSITION/HEIGHT/DISPLAY BETWEEN ELEMENTS**************************************************
+
+/* 24 - SOME CLASSES
+
+.block
+  display: block !important
+
+/* 25 - display
+
+.displaynone_desktop
+  display: none
+
+.displaynone
+  display: none !important
+
+/* 26 - padding
+
+.padding0
+  padding: 0px !important
+
+.padding50
+  padding: 5px 0px !important
+
+/* 27 - START SPACE: attribuisco la classe space ad un div vuoto per fare degli spazi tra gli elementi
+
+.space3
+  height: 3px
+  width: 100%
+  float: left
+
+.space5
+  height: 5px
+  width: 100%
+  float: left
+
+.space10
+  height: 10px
+  width: 100%
+  float: left
+
+.space15
+  height: 15px
+  width: 100%
+  float: left
+
+.space20
+  height: 20px
+  width: 100%
+  float: left
+
+.space30
+  height: 30px
+  width: 100%
+  float: left
+
+.space40
+  height: 40px
+  width: 100%
+  float: left
+
+.space50
+  height: 50px
+  width: 100%
+  float: left
+
+.space60
+  height: 60px
+  width: 100%
+  float: left
+
+.space70
+  height: 70px
+  width: 100%
+  float: left
+
+.space80
+  height: 80px
+  width: 100%
+  float: left
+
+.space90
+  height: 90px
+  width: 100%
+  float: left
+
+.space100
+  height: 100px
+  width: 100%
+  float: left
+
+/*END SPACE
+
+/* 28 - START DARKMARGIN
+
+.margin5
+  margin: 5px
+  padding: 0px
+  display: inline-block
+
+.margin10
+  margin: 10px
+  padding: 0px
+  display: inline-block
+
+.margin100
+  margin: 10px 0px
+  padding: 0px
+  display: inline-block
+
+.margin20
+  margin: 20px
+  padding: 0px
+  display: inline-block
+
+.margin020
+  margin: 0px 20px
+  padding: 0px
+  display: inline-block
+
+.margin010
+  margin: 0px 10px
+  padding: 0px
+  display: inline-block
+
+.margin1820
+  margin: 18px 20px
+  padding: 0px
+  display: inline-block
+
+.margin30
+  margin: 30px
+  padding: 0px
+  display: inline-block
+
+.margin40
+  margin: 40px
+  padding: 0px
+  display: inline-block
+
+.margin2040
+  margin: 20px 40px
+  padding: 0px
+  display: inline-block
+
+/*left
+
+.marginleft10
+  margin-left: 10px
+
+.marginleft20
+  margin-left: 20px
+
+.marginleft50
+  margin-left: 50px
+
+.marginleft60
+  margin-left: 60px
+
+.marginleft70
+  margin-left: 70px
+
+.marginleft80
+  margin-left: 80px
+
+.marginleft85
+  margin-left: 85px
+
+.marginleft90
+  margin-left: 90px
+
+.marginleft100
+  margin-left: 100px
+
+.marginleft110
+  margin-left: 110px
+
+.marginleft120
+  margin-left: 120px
+
+/*right
+
+.marginright10
+  margin-right: 10px
+
+.marginright20
+  margin-right: 20px
+
+/*END DARKMARGIN
+
+/* 28 - START MARGIN NEGATIVE
+/*top
+
+.margintop10_negative
+  margin-top: -10px !important
+
+.margintop20_negative
+  margin-top: -20px !important
+
+.margintop30_negative
+  margin-top: -30px !important
+
+.margintop40_negative
+  margin-top: -40px !important
+
+.margintop45_negative
+  margin-top: -45px !important
+
+.margintop50_negative
+  margin-top: -50px !important
+
+.margintop60_negative
+  margin-top: -60px !important
+
+.margintop70_negative
+  margin-top: -70px !important
+
+/*bottom
+
+.marginbottom10_negative
+  margin-bottom: -10px !important
+
+.marginbottom20_negative
+  margin-bottom: -20px !important
+
+.marginbottom30_negative
+  margin-bottom: -30px !important
+
+.marginbottom40_negative
+  margin-bottom: -40px !important
+
+.marginbottom50_negative
+  margin-bottom: -50px !important
+
+.marginbottom60_negative
+  margin-bottom: -60px !important
+
+.marginbottom70_negative
+  margin-bottom: -70px !important
+
+.marginbottom80_negative
+  margin-bottom: -80px !important
+
+.marginbottom90_negative
+  margin-bottom: -90px !important
+
+/*END MARGIN NEGATIVE
+
+/* 29 - DARKSIZE: APPLICARE la calsse solo al testo per distanziarlo dal box
+
+.size_small
+  margin: 5px 10px
+
+.size_medium
+  margin: 10px 20px
+
+.size_big
+  margin: 15px 20px
+
+/*DARKSIZE
+
+/* 30 - START DARKABSOLUTE
+
+.absolute
+  position: absolute
+  left: 0
+
+.absolute_left
+  position: absolute
+  margin-top: 20px
+  margin-left: 20px
+
+.absolute_right
+  position: absolute
+  margin-top: 20px
+  margin-right: 20px
+  right: 0
+
+/*10 margin
+
+.absolute_right10
+  position: absolute
+  margin-top: 10px
+  margin-right: 10px
+  right: 0
+
+/*END DARKABSOLUTE
+
+/* 31 - START DARKRELATIVE
+
+.relative
+  position: relative
+
+/*END DARKABSOLUTE
+
+/* 32 - START DARKHEIGHT
+
+.height100
+  height: 100px
+
+.height150
+  height: 150px
+
+.height200
+  height: 200px
+
+.height250
+  height: 250px
+
+.height300
+  height: 300px
+
+.height350
+  height: 350px
+
+.height400
+  height: 400px
+
+.height450
+  height: 450px
+
+.height500
+  height: 500px
+
+/*END DARKHEIGHT
+
+/**********************************SOME CLASSES FOR DIV ARCHIVE*********************************************************************
+
+/* 33 - START TEXTEVIDENCE
+
+.textevidence
+  float: left
+  width: 100%
+  position: relative
+  overflow: hidden
+  &.center
+    text-align: center
+  &.left
+    text-align: left
+  &.right
+    text-align: right
+  &.overflow_scroll
+    overflow-x: auto !important
+
+/*align
+
+/*overflow
+
+/*END TEXTEVIDENCE
+
+/* 34 - START DARKFOCUS
+
+.focus
+  float: left
+  width: 100%
+  &.center
+    text-align: center
+  &.right
+    text-align: right
+
+/*END DARKFOCUS
+
+/* 35 - START DARKARCHIVE1
+
+.archive1
+  float: left
+  width: 100%
+  position: relative
+  overflow: hidden
+  &.center
+    text-align: center
+  img
+    width: 100%
+    height: auto
+    display: block
+
+/*END DARKARCHIVE1
+
+/* 36 - START DARKACTIVITY
+
+.activity
+  float: left
+  &.center
+    text-align: center
+
+/*END DARKACTIVITY
+
+/* 37  -  START DARKMASONRYCONTAINER
+
+.masonry_btns
+  float: left
+  width: 100%
+
+.masonry_container
+  float: left
+  width: 100%
+  -webkit-transition-duration: 0.8s
+  -moz-transition-duration: 0.8s
+  -ms-transition-duration: 0.8s
+  -o-transition-duration: 0.8s
+  transition-duration: 0.8s
+  -webkit-transition-property: height, width
+  -moz-transition-property: height, width
+  -ms-transition-property: height, width
+  -o-transition-property: height, width
+  transition-property: height, width
+
+/*END DARKMASONRYCONTAINER
+
+/***************************************************HOVER CLASSES EFFECT**********************************************************************
+
+/* 38 - rotate
+
+.rotate
+  -webkit-transition: all 0.5s ease
+  -moz-transition: all 0.5s ease
+  -o-transition: all 0.5s ease
+  -ms-transition: all 0.5s ease
+  transition: all 0.5s ease
+  &:hover
+    -webkit-transform: rotate(360deg)
+    -moz-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    -ms-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+/* 39 - press
+
+.press
+  -webkit-transition: all 0.5s ease
+  -moz-transition: all 0.5s ease
+  -o-transition: all 0.5s ease
+  -ms-transition: all 0.5s ease
+  transition: all 0.5s ease
+  &:hover
+    box-shadow: 0px 0px 0px 0px transparent !important
+    margin-top: 4px
+    margin-bottom: -4px
+
+/* 40 - zoom
+
+.zoom
+  -webkit-transition: all 500ms
+  -o-transition: all 500ms
+  transition: all 500ms
+  &:hover
+    -webkit-transform: scale(1.2, 1.2)
+    -o-transform: scale(1.2, 1.2)
+    transform: scale(1.2, 1.2)
+
+/* 41 - opacity
+
+.opacity
+  opacity: 1
+  -webkit-transition: opacity
+  -webkit-transition-timing-function: ease-out
+  -webkit-transition-duration: 250ms
+  -moz-transition: opacity
+  -moz-transition-timing-function: ease-out
+  -moz-transition-duration: 250ms
+  &:hover
+    opacity: 0.8
+    -webkit-transition: opacity
+    -webkit-transition-timing-function: ease-out
+    -webkit-transition-duration: 250ms
+    -moz-transition: opacity
+    -moz-transition-timing-function: ease-out
+    -moz-transition-duration: 250ms
+
+/* 42 - TRANSITION
+
+.transition
+  -webkit-transition: all 0.8s ease
+  -moz-transition: all 0.8s ease
+  -o-transition: all 0.8s ease
+  -ms-transition: all 0.8s ease
+  transition: all 0.8s ease
+
+/* 43 - START DARKBGHOVER
+
+.bg_grey_hover:hover
+  background-color: #f9f9f9 !important
+
+.bg_grey2_hover:hover
+  background-color: #f1f1f1 !important
+
+.bg_greydark_hover:hover
+  background-color: #495052 !important
+
+.bg_greydark2_hover:hover
+  background-color: #404547 !important
+
+.bg_green_hover:hover
+  background-color: #6fc191 !important
+
+.bg_blue_hover:hover
+  background-color: #74cee4 !important
+
+.bg_violet_hover:hover
+  background-color: #c389ce !important
+
+.bg_orange_hover:hover
+  background-color: #ec774b !important
+
+.bg_red_hover:hover
+  background-color: #e16c6c !important
+
+.bg_yellow_hover:hover
+  background-color: #edbf47 !important
+
+.bg_greendark_hover:hover
+  background-color: #6ab78a !important
+
+.bg_bluedark_hover:hover
+  background-color: #6fc4d9 !important
+
+.bg_violetdark_hover:hover
+  background-color: #ac7ab5 !important
+
+.bg_orangedark_hover:hover
+  background-color: #df764e !important
+
+.bg_reddark_hover:hover
+  background-color: #c86969 !important
+
+.bg_yellowdark_hover:hover
+  background-color: #e0b84e !important
+
+/***************************************************CSS FOR CUSTOM REV SLIDER**********************************************************************
+
+.slide1 > ul
+  position: absolute
+  z-index: 0
+
+/***************************************************JQUERY UI**********************************************************************
+
+/* 44 - START DARKCALENDAR
+
+.ui-datepicker
+  float: left
+  width: 300px
+  position: relative
+
+.grid .ui-datepicker
+  float: left
+  width: 100%
+
+/*header
+
+.ui-datepicker-header
+  background-color: #495052
+  float: left
+  width: 100%
+  border-radius: 5px 5px 0px 0px
+
+.ui-datepicker-title
+  float: left
+  width: 100%
+  padding: 15px 0px
+  text-align: center
+  font-size: 17px
+  line-height: 17px
+  font-family: 'Montserrat', sans-serif
+  color: #fff
+  text-transform: uppercase
+
+/*arrows
+
+.ui-datepicker-prev span, .ui-datepicker-next span
+  display: none
+
+.ui-datepicker-prev
+  position: absolute
+  left: 0
+  top: 15px
+  margin-left: 20px
+  &:before
+    content: '\ea73' !important
+    font-family: 'fontello'
+    color: #fff
+    cursor: pointer
+
+.ui-datepicker-next
+  position: absolute
+  right: 0
+  top: 15px
+  margin-right: 20px
+  &:before
+    content: '\ea75' !important
+    font-family: 'fontello'
+    color: #fff
+    cursor: pointer
+
+/*days
+
+.ui-datepicker-calendar
+  float: left
+  width: 100%
+  border-collapse: collapse
+  text-align: center
+  border-radius: 5px
+  box-shadow: 0px 4px 0px 0px #f1f1f1
+  background-color: #f9f9f9
+  thead
+    background-color: #6fc191
+    color: #fff
+    font-size: 13px
+    line-height: 13px
+    font-family: 'Montserrat', sans-serif
+    font-weight: normal
+    text-transform: uppercase
+  th
+    font-weight: normal
+    padding: 15px 10px
+  td
+    font-weight: normal
+    box-shadow: inset -1px 1px 0px 0px #f1f1f1
+    a
+      font-size: 13px
+      padding: 10px 10px
+      line-height: 15px
+      color: #b7b7b7
+      display: block
+
+/*today
+
+.ui-datepicker-today a
+  color: #fff !important
+  background-color: #6fc191
+
+
+
+/*hover
+
+.ui-datepicker-calendar .ui-state-hover
+  color: #fff !important
+  background-color: #6fc191
+
+/*END DARKCALENDAR
+
+/* 45 - START DARKTOOLTIP
+
+.ui-tooltip
+  font-family: 'Raleway', sans-serif
+  position: absolute
+  background: rgba(73, 80, 82, 0.9)
+  color: #fff
+  margin: 0px
+  padding: 0px
+  padding: 10px 20px
+  font-size: 15px
+  border-radius: 40px
+  outline: 0
+  -webkit-appearance: none
+  border: 0
+
+/*END DARKTOOLTIP
+
+/* 46 - START DARKSLIDERRANGE
+
+.ui-slider
+  position: relative
+  text-align: left
+  float: left
+  width: 100%
+  height: 5px
+  .ui-slider-handle
+    position: absolute
+    z-index: 2
+    width: 20px
+    height: 20px
+    cursor: pointer
+    -ms-touch-action: none
+    touch-action: none
+    background-color: #edbf47
+    border-radius: 100%
+    outline: 0
+    bottom: -8px
+  .ui-slider-range
+    position: absolute
+    z-index: 1
+    font-size: .7em
+    display: block
+    border: 0
+    background-position: 0 0
+    background-color: #e0b84e
+    height: 5px
+
+/*END DARKSLIDERRANGE

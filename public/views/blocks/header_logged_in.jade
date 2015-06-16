@@ -1,0 +1,105 @@
+header(ng-controller="headerCtrl")
+    .section.navigation.fade-down
+        .menu_boxed
+            .section.bg_greydark.displaynone_responsive(style="position: relative;")
+                .container.clearfix
+                    .grid.grid_5
+                        .focus.left
+                            h6.white
+                                i.icon-globe-alt-outline
+                                a.white.mpopup_window ВЫБОР ЯЗЫКА
+                                a(title='Английский' class='lang' href='#')
+                                    img(height='16px' class='english' alt='Английский' src='../images/flag/img1.png')
+                                a(title='Русский' class='lang' href='#')
+                                    img(height='16px' class='russian' alt='Русский' src='../images/flag/img2.png')
+                                a(title='Арабский' class='lang' href='#')
+                                    img(height='16px' class='arabic' alt='Арабский' src='../images/flag/img3.png')
+
+
+
+
+                    .grid.grid_7(style='max-height: 13px;')
+
+
+                        .right
+                            h6.white.user_block
+                                .controls
+                                    //here can be control buttons such as Exit settings etc.
+                                    i.icon-lock-1
+                                    a.white(href='/logout') ВЫХОД
+                                .user_block
+                                    img.user_avatar(alt='user' ng-src='{{avatar}}')
+                                    a(ng-href="/profile/{{name}}", ng-bind="name").header_username
+                                    //USER INFO BLOCK SHOW ON HOVER
+                                    #profile-info
+                                        div.top
+                                            a(ng-href='/profile/{{name}}').top_bar Профайл
+                                            a(href='/logout').top_bar Выход
+                                        div.central
+                                            .status {{status}}
+                                            .user-progress
+                                                .star &#x272a;
+                                                    span {{teamwork + engagement + activity}}
+                                                .teamwork Работа в команде
+                                                    span  {{teamwork}}
+                                                .engagement Участие
+                                                    span  {{engagement}}
+                                                .activity Активность
+                                                    span  {{activity}}
+                                        div.bottom
+                                            a(ng-href='/profile/{{name}}').bottom_bar Как получать звезды?
+                                            a(href='/logout').bottom_bar Рейтинги
+
+
+
+
+                        #profile-block
+                            ul#indicators
+                                li#letter-indicator
+                                    a(href='#')
+                                        i.icon-mail-alt
+                                    div.count-container
+                                        span.count-number 12
+                                    include ../elements/letter-dropdown
+                                li#notifications-indicator
+                                    a(href='#')
+                                        i.icon-comment
+                                    div.count-container
+                                        span.count-number 67
+                                    include ../elements/notifications-dropdown
+                                li#friends-indicator
+                                    a(href='#')
+                                        i.icon-users-1
+                                    div.count-container
+                                        span.count-number 24
+                                    include ../elements/friends-invites-dropdown
+
+
+
+            .space3.bg_gradient
+            .section.bg_grey.shadow.radius_bottom
+                .container.clearfix
+                    .grid.grid_12.percentage
+                        .space10
+                        .logo.marginleft10
+                            a(href='/')
+                                h4(style='font-family: "hubert";font-size: 25px;line-height: 29px;color: #868585;') NODE IS COOL
+                        //a.btn_icon.zoom.bg_yellow_hover.right_sidebar_btn_open.marginright10.bg_orange.extrasmall.radius.white.right
+                            //i.icon-basket-1 link to the cart!
+                        nav
+                            ul.menu.margin010.padding50
+                                li.orange
+                                    a(href='/') MAIN
+                                li.yellow.megamenu
+                                    a(href='/page1') PAGE1
+                                li.red
+                                    a(href='/page2/main') PAGE2
+                                li.blue
+                                    a(href='/page3') PAGE3
+                                li.yellow.megamenu
+                                    a(href='/page4') PAGE4
+                                li.green
+                                    a(href='/page5') PAGE5
+                        .space10
+                // end container
+            // end header

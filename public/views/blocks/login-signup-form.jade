@@ -1,0 +1,83 @@
+.space100
+.space20
+.container
+    .grid.grid_12
+        .section.bg_grey.shadow.radius_bottom#social-login
+            .clearfix
+                h3 Регистрация через социальные сети
+                .space3.bg_gradient
+                ul
+                    li
+                        a.btn_social.btn_vk.btn_soc.btn(href='/auth/vkontakte') Вконтакте
+                            i.icon-vkontakte
+                    li
+                        a.btn_social.btn_facebook.btn_soc.btn(href='/auth/facebook') Facebook
+                            i.icon-facebook
+                    li
+                        a.btn_social.btn_odnoklassniki.btn_soc.btn(href='/auth/odnoklassniki') Одноклассники
+                            i.icon-github
+                    li
+                        a.btn_social.btn_twitter.btn_soc.btn(href='#') Twitter
+                            i.icon-twitter
+                    li
+                        a.btn_social.btn_gplus.btn_soc.btn(href='/auth/google') Google Plus
+                            i.icon-gplus
+
+    .grid.grid_6
+
+        .clearfix
+            #login
+                form(action='/login', method='post', id="loginForm")
+                    h3 Вход
+                    .space3.bg_gradient
+                    .space30
+
+                    p
+                        label(for='username')
+                            i.icon-user-1
+                        input#username(name='username', placeholder='Имя пользователя', required='', minlength='3', maxlength='40')
+                        if(loginmessageName)
+                            span#username-error.system.error #{loginmessageName}
+                    p
+                        label(for='password')
+                            i.icon-lock-1
+                        input#password(type='password', placeholder='Пароль', maxlength='20', name='password', required='', minlength='5')
+                        if(loginmessagePass)
+                            span#username-error.system.error #{loginmessagePass}
+                    p
+                        button.btn.medium.radius.white.submit(type='submit') ВОЙТИ В АККАУНТ
+    .grid.grid_6
+        .clearfix
+            #signup
+                // LOGIN FORM
+                form(action='/signup', method='post', id="signupForm")
+                    h3 Регистрация
+                    .space3.bg_gradient
+                    .space30
+                    p
+                        label(for='username')
+                            i.icon-user-1
+                        if( signupmessage)
+                            - var klass = 'fghfghgfhfghgfhfgh'
+                            span#username-error.system.error #{signupmessage}
+                        input#username(name='username' , class=klass,  placeholder='Имя пользователя', required='', minlength='3')
+                    p
+                        label(for='email')
+                            i.icon-mail-1
+                        input#email(type='email', name='email', placeholder='Электронная почта', required='', minlength='3')
+                        if( addressmessage)
+                            span#username-error.system.error #{addressmessage}
+                    p
+                        label(for='password')
+                            i.icon-lock-1
+                        input#password(type='password', maxlength='20', name='password', required='', placeholder='Пароль', minlength='5')
+                    p#conditions
+                        input#terms(type='checkbox', name='conditions', required='')
+                        label Согласен с
+                            a(href='#')  Условиями использования
+                    p
+                        button.btn.bg_blue.medium.radius.white.submit(type='submit') СОЗДАТЬ АККАУНТ
+
+
+.space100
+.space60

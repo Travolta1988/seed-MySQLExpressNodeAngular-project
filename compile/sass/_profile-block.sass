@@ -1,0 +1,165 @@
+#profile-block
+  float: right
+  height: 0
+  margin-right: 20px
+  z-index: 1
+  #user-progress
+    height: 125px
+    clear: both
+    display: none
+    > div
+      border: 1px solid #cccccc
+      border-radius: 3px
+      padding: 1px 3px
+      margin-bottom: 6px
+      width: 109px
+      text-align: center
+      i
+        right: -31px
+        margin-top: -17px
+        position: absolute
+        color: #666
+      p
+        font-size: 12px
+  ul#indicators
+    position: relative
+    margin: 0 30px 0 0
+    top: -6px
+    li
+      display: inline-block
+      position: relative
+      margin-left: 7px
+      height: 32px
+      a
+        float: left
+        i
+          font-size: 20px
+          color: #fff
+          &:hover
+            color: #ccc
+      .count-container
+        float: right
+        top: 3px
+        left: 3px
+        position: relative
+        background: #00AE00
+        border-radius: 3px
+        width: 19px
+        height: 19px
+        text-align: center
+        color: #fff
+        span
+          font-size: 10px
+          position: relative
+          top: -1px
+          font-family: "Montserrat",sans-serif
+      .dropdown
+        background: none repeat scroll 0 0 #f4f4f4
+        height: 270px
+        position: absolute
+        right: -142px
+        top: 38px
+        display: none
+        border-radius: 0 0 2px 2px
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35)
+        width: 350px
+        z-index: 1
+        &.visible
+          display: block
+        &:after
+          -moz-border-bottom-colors: none
+          -moz-border-left-colors: none
+          -moz-border-right-colors: none
+          -moz-border-top-colors: none
+          border-color: transparent transparent #f4f4f4
+          border-image: none
+          border-style: solid
+          border-width: 10px
+          content: " "
+          height: 0
+          left: 165px
+          position: absolute
+          top: -20px
+          width: 0
+
+//USER INFO BLOCK HOVER
+#profile-info
+  position: absolute
+  border-radius: 0 0 2px 2px
+  box-shadow: 0 2px 2px #666
+  right: -88px
+  top: 26px
+  background: #1c6f89
+  width: 330px
+  height: 200px
+  z-index: 1
+  display: none
+
+
+#profile-block
+  #letter-dropdown
+    h3
+      text-align: center
+      padding: 0
+      font-size: 18px
+      font-weight: normal
+      line-height: 35px
+      margin: 0
+    .direct-link
+      bottom: 19px
+      position: absolute
+      text-align: center
+      width: 100%
+      a
+        text-align: center
+        float: none !important
+        background: none repeat scroll 0 0 #587ea3
+        border-radius: 2px
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        box-shadow: 2px 2px 2px #ccc
+        font-size: 13px !important
+        padding: 5px
+        color: #fff
+        font-family: "Montserrat",sans-serif
+        i
+          font-size: 13px
+          font-style: normal
+          height: 25px
+          &:hover
+            color: #fff
+        &:hover
+          background: #466482
+
+  #notifications-dropdown
+    h3
+      text-align: center
+      padding: 0
+      font-size: 18px
+      font-weight: normal
+      line-height: 35px
+      margin: 0
+    .direct-link
+      bottom: 19px
+      position: absolute
+      text-align: center
+      width: 100%
+      a
+        text-align: center
+        float: none !important
+        background: none repeat scroll 0 0 #f7931e
+        border-radius: 2px
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        box-shadow: 2px 2px 2px #ccc
+        font-size: 13px !important
+        padding: 5px
+        color: #fff
+        font-family: "Montserrat",sans-serif
+        i
+          font-size: 13px
+          font-style: normal
+          height: 25px
+          &:hover
+            color: #fff
+        &:hover
+          background: #da7908
+

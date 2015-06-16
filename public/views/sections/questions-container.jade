@@ -1,0 +1,128 @@
+.grid.grid_6
+    .archive1.bg_grey.radius.shadow
+        .clearfix
+        #ask-question-area
+            .space10
+
+
+
+            #messages
+
+
+
+            h4.subtitle.greydark ВОПРОСЫ ГРУППЫ
+                span(style='text-transform: uppercase')  {{groupName}}
+            .space10
+            textarea(placeholder='Введите сюда ваш вопрос')
+            .space10
+            a.press.right.btn_icon.bg_blue.shadow.radius.white
+                span ЗАДАТЬ ВОПРОС
+            .clearfix
+            .space10
+            .tab
+                ul.tabslist
+                    li
+                        a.tooltip.btn.bg_violet.medium.radius.white(href='#tabs-1' style='margin-right:5px;' onclick='return false;') ОТКРЫТЫЕ
+                    li
+                        a#closed.btn.bg_green.medium.radius.white(href='#tabs-2' onclick='return false;') ЗАКРЫТЫЕ
+
+                .tabs.bg_grey.radius
+                    #tabs-1.scroll-container
+                        ul#questions-list(style='padding-left: 0;')
+                            li.question(ng-repeat='question in questionsData')
+                                a(ng-href='#/question'+'{{question.question_id}}')
+                                    .grid.grid_1
+                                        .user-avatar
+                                            img(class='avatar' ng-src='{{ question.user_avatar}}' ng-class='question.status_class' alt='avatar' )
+                                            .clearfix
+
+                                    .grid.archive1.grid_4.radius.shadow
+                                        h4.small(ng-class='question.status_class') {{question.username}}
+                                            span.user-status(ng-class='question.status_class') {{question.status_name}}
+                                        span.time-update.small {{question.date_asked}}
+                                        .space10
+                                        p.small  {{question.question_text}}
+
+                                        ul.question-watchers
+                                            li.watchers
+                                    img(class='arrow' src='/images/arrow-question.png')
+
+
+
+                    #tabs-2.scroll-container-closed
+                        ul#questions-list-closed(style='padding-left: 0;')
+                            li.question
+                                .grid.grid_1
+                                    .user-avatar
+                                        img(class='avatar' src='../images/avatar.png' alt='avatar').person-1
+                                        .clearfix
+
+                                .grid.archive1.grid_4.radius.shadow
+                                    h4.small Username
+                                    span.time-update.small updated 2 min ago
+                                    .space10
+                                    p.small  Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis. Aenean convallis ac lorem et sodales.
+                                img(class='arrow' src='../images/arrow-question.png')
+                            li.question
+                                .grid.grid_1
+                                    .user-avatar
+                                        img(class='avatar' src='../images/avatar.png' alt='avatar').person-2
+                                        .clearfix
+
+                                .grid.archive1.grid_4.radius.shadow
+                                    h4.small Username
+                                    span.time-update.small updated 2 min ago
+                                    .space10
+                                    p.small  Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis. Aenean convallis ac lorem et sodales.
+                                img(class='arrow' src='../images/arrow-question.png')
+                            li.question
+                                .grid.grid_1
+                                    .user-avatar
+                                        img(class='avatar' src='../images/avatar.png' alt='avatar').person-3
+                                        .clearfix
+
+                                .grid.archive1.grid_4.radius.shadow
+                                    h4.small Username
+                                    span.time-update.small updated 2 min ago
+                                    .space10
+                                    p.small  Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis. Aenean convallis ac lorem et sodales.
+                                img(class='arrow' src='../images/arrow-question.png')
+                            li.question
+                                .grid.grid_1
+                                    .user-avatar
+                                        img(class='avatar' src='../images/avatar.png' alt='avatar').person-4
+
+                                        .clearfix
+
+                                .grid.archive1.grid_4.radius.shadow
+                                    h4.small Username
+                                    span.time-update.small updated 2 min ago
+                                    .space10
+                                    p.small  Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis. Aenean convallis ac lorem et sodales.
+                                img(class='arrow' src='../images/arrow-question.png')
+                            li.question
+                                .grid.grid_1
+                                    .user-avatar
+                                        img(class='avatar' src='../images/avatar.png' alt='avatar').person-1
+                                        .clearfix
+
+                                .grid.archive1.grid_4.radius.shadow
+                                    h4.small Username
+                                    span.time-update.small updated 2 min ago
+                                    .space10
+                                    p.small  Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis. Aenean convallis ac lorem et sodales.
+                                img(class='arrow' src='../images/arrow-question.png')
+                            li.question
+                                .grid.grid_1
+                                    .user-avatar
+                                        img(class='avatar' src='../images/avatar.png' alt='avatar').person-2
+                                        .clearfix
+
+                                .grid.archive1.grid_4.radius.shadow
+                                    h4.small Username
+                                    span.time-update.small updated 2 min ago
+                                    .space10
+                                    p.small  Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis. Aenean convallis ac lorem et sodales.
+                                img(class='arrow' src='../images/arrow-question.png')
+
+                .space30

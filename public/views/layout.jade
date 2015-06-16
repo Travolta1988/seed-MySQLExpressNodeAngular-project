@@ -1,0 +1,183 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title=title
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet', href='../stylesheets/base.css')
+        link(rel='stylesheet', href='../stylesheets/mobile.css')
+        link(rel='stylesheet', href='../libs/revslider/settings.css')
+        link(rel='stylesheet', href='../libs/plugins/scrollpane/jquery.jscrollpane.css')
+        link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        // font-family: 'Montserrat', sans-serif;
+        link(href='http://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
+        // font-family: 'Raleway', sans-serif;
+        link(href='http://fonts.googleapis.com/css?family=Montez', rel='stylesheet', type='text/css')
+        // font-family: 'Montez', cursive;
+        //if lt IE 9
+          script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+        // FAVICONS
+        link(rel='shortcut icon', href='../images/favicon/favicon.ico')
+        link(rel='apple-touch-icon', href='../images/favicon/apple-touch-icon.png')
+        link(rel='apple-touch-icon', sizes='72x72', href='../images/favicon/apple-touch-icon-72x72.png')
+        link(rel='apple-touch-icon', sizes='114x114', href='../images/favicon/apple-touch-icon-114x114.png')
+        script(src='../libs/jquery.min.js')
+        // load angular
+
+        script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js")
+
+        //Adding Angular Controllers
+        script(src="../javascripts/controllers/studystar.js")
+        script(src="../javascripts/controllers/headerCtrl.js")
+        script(src="../javascripts/controllers/profileCtrl.js")
+        script(src="../javascripts/controllers/studyCtrl.js")
+        script(src="../javascripts/controllers/answersCtrl.js")
+        // END FAVICONS
+    body#begin(class=logged_in, ng-app='studystar')
+        .popup-overlay
+        .site
+            .site_fullwidth.clearfix
+                .overlay
+                block header
+                block content
+                block footer
+                block notifications
+                    include sections/notifications
+
+        // main
+
+        // Jquery
+        script(src='../libs/jquery-ui.js')
+        // Jquery UI
+        script(src='../libs/excanvas.js')
+        // canvas need for ie
+        // plugins
+        script(src='../libs/plugins/revslider/jquery.themepunch.tools.min.js')
+        // form-validation
+        script(src='../libs/plugins/form-validation/jquery.validate.min.js')
+        // revslider
+        script(src='../libs/plugins/revslider/jquery.themepunch.revolution.min.js')
+        // revslider
+        // menu
+        script(src='../libs/plugins/menu/superfish.min.js')
+        // superfish
+        script(src='../libs/plugins/menu/tinynav.min.js')
+        // tinynav
+        // other
+        script(src='../libs/plugins/isotope/isotope.pkgd.min.js')
+        // isotope
+        script(src='../libs/plugins/mpopup/jquery.magnific-popup.min.js')
+        // mpopup
+        script(src='../libs/plugins/scroolto/scroolto.js')
+        // Scrool To
+        script(src='../libs/plugins/nicescrool/jquery.nicescroll.min.js')
+        // Nice Scroll
+        script(src='../libs/plugins/inview/jquery.inview.min.js')
+        // inview
+        script(src='../libs/plugins/parallax/jquery.parallax-1.1.3.js')
+        // parallax
+        script(src='../libs/plugins/countto/jquery.countTo.js')
+        // jquery.countTo
+        script(src='../libs/plugins/countdown/jquery.countdown.js')
+        // countdown
+        // settings
+        script(src='../javascripts/settings.js')
+        // settings
+        // custom js
+        //scroll on study page
+        script(src='../libs/plugins/scrollpane/jquery.mousewheel.js')
+        script(src='../libs/plugins/scrollpane/jquery.jscrollpane.min.js')
+
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.js")
+
+        script(type='text/javascript').
+            jQuery(document).ready(function () {
+                jQuery('.slide1').show().revolution(
+                        {
+                            dottedOverlay: "none",
+                            delay: 16000,
+                            startwidth: 1170,
+                            startheight: 650,
+                            hideThumbs: 200,
+                            thumbWidth: 100,
+                            thumbHeight: 50,
+                            thumbAmount: 5,
+                            navigationType: "none",
+                            navigationArrows: "solo",
+                            navigationStyle: "preview2",
+                            touchenabled: "on",
+                            onHoverStop: "on",
+                            swipe_velocity: 0.7,
+                            swipe_min_touches: 1,
+                            swipe_max_touches: 1,
+                            drag_block_vertical: false,
+                            parallax: "mouse",
+                            parallaxBgFreeze: "on",
+                            parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+                            keyboardNavigation: "off",
+                            navigationHAlign: "center",
+                            navigationVAlign: "bottom",
+                            navigationHOffset: 0,
+                            navigationVOffset: 20,
+                            soloArrowLeftHalign: "left",
+                            soloArrowLeftValign: "center",
+                            soloArrowLeftHOffset: 20,
+                            soloArrowLeftVOffset: 0,
+                            soloArrowRightHalign: "right",
+                            soloArrowRightValign: "center",
+                            soloArrowRightHOffset: 20,
+                            soloArrowRightVOffset: 0,
+                            shadow: 0,
+                            fullWidth: "on",
+                            fullScreen: "off",
+                            spinner: "spinner4",
+                            stopLoop: "off",
+                            stopAfterLoops: -1,
+                            stopAtSlide: -1,
+                            shuffle: "off",
+                            autoHeight: "off",
+                            forceFullWidth: "off",
+                            hideTimerBar: "on",
+                            hideThumbsOnMobile: "off",
+                            hideNavDelayOnMobile: 1500,
+                            hideBulletsOnMobile: "off",
+                            hideArrowsOnMobile: "off",
+                            hideThumbsUnderResolution: 0,
+                            hideSliderAtLimit: 0,
+                            hideCaptionAtLimit: 0,
+                            hideAllCaptionAtLilmit: 0,
+                            startWithSlide: 0,
+                            videoJsPath: "rs-plugin/videojs/",
+                            fullScreenOffsetContainer: ""
+                        });
+
+                $('#parallax_big_image').parallax("50%", 0.3);
+                $('#parallax_2_btns').parallax("50%", 0.3);
+                $('#parallax_countdown').parallax("50%", 0.3);
+                $('#parallax_counter').parallax("50%", 0.3);
+
+                var endDate = "June 06, 2015 10:30:00";
+                var grid = "grid_3";
+
+                var display_years = "displaynone";
+                var display_days = "";
+                var display_hours = "";
+                var display_minutes = "";
+                var display_seconds = "";
+                $(".countdown").countdown({
+                    date: endDate,
+                    render: function (data) {
+
+                    }
+                });
+            });
+        script(type='text/javascript').
+            $(document).ready(function(){
+                $('.scroll-container').jScrollPane({
+                    autoReinitialise: true,
+                    hideFocus: true
+                });
+            });
+
+                                                         

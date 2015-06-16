@@ -1,0 +1,11 @@
+extends ../layout
+block header
+    if(logged_in)
+        include ../blocks/header_logged_in
+    else
+        include ../blocks/header
+block content
+    include ../blocks/cart
+    include ../blocks/login-signup-form
+block footer
+    include ../blocks/footer

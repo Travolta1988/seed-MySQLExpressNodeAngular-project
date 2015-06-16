@@ -1,0 +1,26 @@
+extends ../layout
+block header
+    if(logged_in)
+        include ../blocks/header_logged_in
+    else
+        include ../blocks/header
+block content
+    include ../blocks/cart
+    section.section
+        .container
+            if(logged_in)
+                include ../sections/choose-group
+            else
+                include ../sections/choose-group-logged-in
+
+    section.section(ng-controller='studyCtrl')
+        .container
+            include ../sections/questions-container
+            ng-view
+            include ../sections/online-users-section
+block footer
+    include ../blocks/footer
+script(type='text/javascript').
+    $('.jspContainer').click(function(){
+        $(this).css('outline','none')
+    });
